@@ -1,0 +1,21 @@
+{
+  "name": "writing-for-engineers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "code-surfer": "^3.1.1",
+    "mdx-deck": "^4.1.1",
+    "react": "^16.13.1",
+    "react-motion": "^0.5.2",
+    "react-shapes": "^0.1.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "mdx-deck writing.mdx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
