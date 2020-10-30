@@ -22,4 +22,5 @@ A lightning talk for software engineers on improving your writing. Slides built 
 ### Hemingway 
 - [Hemingway app](http://www.hemingwayapp.com/) to identify problematic sentences.
 ### Vim
-I'm not a fanboy I promise
+I'm not a fanboy I promise.
+There are quite a few Vim plugins for writing. I'm not going to list them all here but I do like [goyo](https://github.com/junegunn/goyo.vim). On a related note, junegunn has some other awesome plugins so check those out as well.
