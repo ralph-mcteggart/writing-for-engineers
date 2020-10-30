@@ -2,180 +2,137 @@
 
 import { future } from '@mdx-deck/themes'
 import { CodeSurfer } from "code-surfer"
-import "prismjs/components/prism-rust"
+import "prismjs/components/prism-yaml"
 
 export const theme = future
-
-<Notes>
-
-
-Resources on Github
-
-</Notes>
-
-
-
----
-
-# Why 
-
 
 ---
 
 # What we'll cover
 
+1. Why is writing important
+2. Instant improvements 
+3. Examples
+
+---
+
+# Why 
+
+- Engineers are writers
+- Writing _is_ communication 
+- How does your writing impact others?
 
 ---
 
 # Tips for instant success
 ## 1. Short sentences. Keep it simple.
 
-Short and easy
-Avoid unnecessary words
-Be exact (remove adverbs if possible)
-Avoid acronyms (or explain them)
-Avoid e.g. i.e. etc. (or at least use them correctly)
+---
 
-Also comes across as strong
+<CodeSurfer>
+
+```yaml 1,2,3,4 title="Short and Simple" subtitle="Long winded"
+The new v2 feature we have created is yet to be released because it relies 
+on certain incredibly important dependencies that aren't available yet but should be in due course, 
+resulting in improved search features for customers who utilise it as well as 
+lower page load times.
+
+
+
+We created a v2 feature but it has critical dependencies. They aren't available 
+yet but we can release when they are. The feature improves search and lowers page 
+load times for our customers.
+```
+
+```yaml 8,9,10 title="Short and Simple" subtitle="Better"
+The new v2 feature we have created is yet to be released because it relies 
+on certain incredibly important dependencies that aren't available yet but should be in due course, 
+resulting in improved search features for customers who utilise it as well as 
+lower page load times.
+
+
+
+We created a v2 feature but it has critical dependencies. They aren't available 
+yet but we can release when they are. The feature improves search and lowers page 
+load times for our customers.
+```
+
+</CodeSurfer>
 
 ---
 
 # Tips for instant success
 ## 2. Be unambiguous
 
+---
+
+<CodeSurfer>
+
+```yaml 1 title="Be Unambiguous" subtitle="Uhhh, alright..."
+When deploying in US East, you can't have too many nodes in this cluster.
+
+The cluster in US East receives spikes in traffic, so feel free to over provision.
+
+The Elasticsearch cluster in US East has a maximum node limit. Don't exceed it.
+```
+
+```yaml 3 title="Be Unambiguous" subtitle="Over provision. Got it."
+When deploying in US East, you can't have too many nodes in this cluster.
+
+The cluster in US East receives spikes in traffic, so feel free to over provision.
+
+The Elasticsearch cluster in US East has a maximum node limit. Don't exceed it.
+```
+
+```yaml 5 title="Be Unambiguous" subtitle="Don't add too many. Got it."
+When deploying in US East, you can't have too many nodes in this cluster.
+
+The cluster in US East receives spikes in traffic, so feel free to over provision.
+
+The Elasticsearch cluster in US East has a maximum node limit. Don't exceed it.
+```
+
+</CodeSurfer>
 
 ---
 
 # Tips for instant success
 ## 3. Use the active voice
 
+- Active voice = Actor + verb + target
+- Passive voice =  Target + verb + actor
+
 ---
+
+<CodeSurfer>
+
+```yaml 1 title="Active Voice" subtitle="Passive example"
+It has been suggested by Emma that services X and A should be restarted immediately...
+
+
+Emma suggests we restart services X and A immediately
+```
+
+```yaml 4 title="Active Voice" subtitle="Improved with active voice"
+It has been suggested by Emma that services X and A should be restarted immediately...
+
+
+Emma suggested that we restart services X and A immediately
+```
+
+</CodeSurfer>
+
 
 # Tips for instant success
 ## 4. Write for your audience
 
-Customers?
-Other engineers?
-Product management? 
+- Customers? Other engineers? Product management? 
+- Tailor your writing
+- Get rid of your ego
 
 ---
 
+# What next?
 
-
----
-
-<CodeSurfer>
-
-```rust 2 title="☎️  Communication" subtitle="Terrible name"
-pub fn main(){
-  let x_variable = 1;
-  let y1_variable = 2;
-  let mut condition = false;
-  while !condition {
-      println!("{}", x_variable + y1_variable);
-      condition = true;
-  }
-}
-```
-
-```rust 3 title="☎️  Communication" subtitle="Thought the last one was bad..."
-pub fn main(){
-  let x_variable = 1;
-  let y1_variable = 2;
-  let mut condition = false;
-  while !condition {
-      println!("{}", x_variable + y1_variable);
-      condition = true;
-  }
-}
-```
-
-```rust 4 title="☎️  Communication" subtitle="Where is this going?"
-pub fn main(){
-  let x_variable = 1;
-  let y1_variable = 2;
-  let mut condition = false;
-  while !condition {
-      println!("{}", x_variable + y1_variable);
-      condition = true;
-  }
-}
-```
-
-```rust 5,6,7,8 title="☎️  Communication" subtitle="Nah."
-pub fn main(){
-  let x_variable = 1;
-  let y1_variable = 2;
-  let mut condition = false;
-  while !condition {
-      println!("{}", x_variable + y1_variable);
-      condition = true;
-  }
-}
-```
-
-
-</CodeSurfer>
-
----
-
-<CodeSurfer>
-
-```js 1,2 title="☎️  Communication" subtitle="I speak good"
-These services our engineering cohort have conjured up have very few bugs and very little downtime! 
-They send communications between each other, updating various data sources. We done good!
-
-
-
-We built a stable, event-driven system.
-```
-
-```js 6 title="☎️  Communication" subtitle="Better"
-These services our engineering cohort have conjured up have very few bugs and very little downtime! We done good!
-They send communications between each other, updating various data sources. We done good!
-
-
-
-We built a stable, event-driven system.
-```
-
-</CodeSurfer>
-
-<Notes>
-
-- Learn to express yourself
-- Write/talk well and improve
-- Simplify simplify simplify
-
-</Notes>
-
----
-
-# ✊🏿  ♀️ 🏳️‍🌈 Diversity 
-
-## Genius rarely happens alone
-## Trust others
-
-
-<Notes>
-
-- Individual contribution only takes you so far
-- You will need to learn from and lean on those around you
-- Different people with different perspectives provide different approaches to problems
-
-</Notes>
-
----
-
-# and more...
-
-1. **Take ownership**
-2. Understand the business
-3. **Seek feedback**
-4. Manage your time
-5. **Tell others how you work best**
-6. Document
-7. **Understand motivations for bad code**
-
-etc. 
+Some resources and these slides on Github
 
